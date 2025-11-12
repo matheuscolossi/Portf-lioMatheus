@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* VARIÁVEIS DE CORES (LÓGICA DO TEMA) */
+:root {
+    --primary: #6C63FF;         /* Roxo principal (não muda) */
+    
+    /* Cores do Tema CLARO (Padrão) */
+    --bg-body: #f8f9fa;
+    --bg-card: #ffffff;
+    --text-main: #1a1a2e;
+    --text-sec: #666666;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    --border: #eeeeee;
+    --footer-bg: #1a1a2e;
+}
+
+/* Cores do Tema ESCURO (Dark Mode) */
+body.dark-mode {
+    --bg-body: #0f0f12;         /* Fundo quase preto */
+    --bg-card: #1a1a23;         /* Cartões cinza escuro */
+    --text-main: #ffffff;       /* Texto branco */
+    --text-sec: #b0b0b0;        /* Texto cinza claro */
+    --shadow: 0 10px 30px rgba(0,0,0,0.4); /* Sombra mais forte */
+    --border: #2a2a35;
+    --footer-bg: #050508;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+/* Aplicação das Variáveis */
+body { 
+    background-color: var(--bg-body); 
+    color: var(--text-main); 
+    overflow-x: hidden; 
+    transition: background 0.3s, color 0.3s; /* Transição suave ao trocar tema */
+}
+
+/* --- Header --- */
+header { background: var(--bg-card); padding: 1rem 5%; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: var(--shadow); transition: background 0.3s; }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+.nav-links { list-style: none; display: flex; gap: 2rem; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text-main); font-weight: 500; transition: 0.3s; }
+.nav-links a:hover { color: var(--primary); }
+.btn-contato { background-color: var(--primary); color: white !important; padding: 8px 25px; border-radius: 25px; transition: 0.3s; }
+.btn-contato:hover { opacity: 0.9; box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4); }
+
+/* Botão Dark Mode */
+.theme-btn { background: transparent; border: none; color: var(--text-main); font-size: 1.2rem; cursor: pointer; transition: 0.3s; }
+.theme-btn:hover { color: var(--primary); transform: rotate(15deg); }
+
+/* --- Hero Section --- */
+.hero { display: flex; align-items: center; justify-content: space-between; padding: 180px 5% 100px; max-width: 1200px; margin: 0 auto; min-height: 90vh; }
+.hero-content { flex: 1; padding-right: 2rem; }
+.badge { background: rgba(108, 99, 255, 0.1); color: var(--primary); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; display: inline-block; margin-bottom: 1rem; }
+.hero-content h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; color: var(--text-main); }
+.highlight { color: var(--primary); }
+.hero-content p { color: var(--text-sec); margin-bottom: 30px; max-width: 500px; font-size: 1.1rem; line-height: 1.6; }
+.botoes { display: flex; gap: 15px; }
+.btn-primary, .btn-secondary { text-decoration: none; padding: 14px 35px; border-radius: 8px; font-weight: 600; transition: 0.3s; display: inline-flex; align-items: center; gap: 8px; }
+.btn-primary { background: var(--primary); color: white; box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3); }
+.btn-secondary { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
+.btn-primary:hover, .btn-secondary:hover { transform: translateY(-3px); }
+
+/* --- Foto Perfil --- */
+.hero-image { flex: 1; display: flex; justify-content: center; }
+.profile-pic {
+    width: 380px; height: 380px; object-fit: cover; border-radius: 50%;
+    border: 5px solid var(--bg-card); /* Borda acompanha a cor do card */
+    box-shadow: 20px 20px 0 rgba(108, 99, 255, 0.2);
+    animation: float 6s ease-in-out infinite;
+    transition: border-color 0.3s;
+}
+@keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
+
+/* --- Skills --- */
+.skills-section { padding: 80px 5%; background: var(--bg-card); text-align: center; transition: background 0.3s; }
+.skills-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px; max-width: 1000px; margin: 0 auto; }
+.skill-card { background: var(--bg-body); padding: 15px 30px; border-radius: 12px; font-weight: 600; color: var(--text-main); display: flex; align-items: center; gap: 10px; border: 1px solid var(--border); transition: 0.3s; }
+.skill-card:hover { background: var(--primary); color: white; transform: translateY(-5px); border-color: var(--primary); }
+
+/* --- Timeline --- */
+.timeline-section { padding: 100px 5%; max-width: 800px; margin: 0 auto; }
+.timeline-section h2 { text-align: center; margin-bottom: 50px; font-size: 2rem; color: var(--primary); }
+.timeline-item { border-left: 3px solid var(--primary); padding-left: 30px; margin-bottom: 40px; position: relative; }
+.timeline-item::before { content: ''; width: 16px; height: 16px; background: var(--bg-card); border: 3px solid var(--primary); border-radius: 50%; position: absolute; left: -9.5px; top: 5px; transition: background 0.3s; }
+.timeline-item h3 { font-size: 1.3rem; margin-bottom: 5px; color: var(--text-main); }
+.timeline-item span { color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 10px; display: block; }
+.timeline-item p { color: var(--text-sec); line-height: 1.6; }
+
+/* --- Projetos --- */
+.projects-section { padding: 100px 5%; background: var(--bg-card); transition: background 0.3s; }
+.projects-section h2 { text-align: center; margin-bottom: 60px; font-size: 2rem; color: var(--primary); }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto; }
+.project-card { background: var(--bg-body); padding: 40px; border-radius: 20px; transition: 0.4s; border: 1px solid var(--border); }
+.project-card:hover { transform: translateY(-10px); box-shadow: var(--shadow); border-color: rgba(108, 99, 255, 0.3); }
+.project-card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--text-main); }
+.project-card p { color: var(--text-sec); line-height: 1.6; margin-bottom: 20px; }
+.tags { display: flex; gap: 10px; flex-wrap: wrap; }
+.tags span { background: rgba(108, 99, 255, 0.1); color: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+
+/* Botão GitHub */
+.github-more { text-align: center; margin-top: 50px; }
+.btn-github-large { display: inline-block; background-color: var(--text-main); color: var(--bg-card); padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: 0.3s; box-shadow: var(--shadow); }
+.btn-github-large:hover { opacity: 0.8; transform: translateY(-3px); }
+
+/* --- Footer --- */
+footer { background: var(--footer-bg); color: white; padding: 80px 5% 30px; text-align: center; transition: background 0.3s; }
+footer h2 { font-size: 2.5rem; margin-bottom: 15px; }
+footer p { color: #a0a0b0; margin-bottom: 40px; }
+.contact-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 60px; }
+.btn-wpp, .btn-email { text-decoration: none; padding: 15px 30px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; display: flex; align-items: center; gap: 10px; transition: 0.3s; }
+.btn-wpp { background-color: #25D366; color: white; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
+.btn-wpp:hover { background-color: #1da851; transform: translateY(-3px); }
+.btn-email { background-color: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.2); }
+.btn-email:hover { background-color: white; color: #1a1a2e; transform: translateY(-3px); }
+.footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px; }
+.footer-bottom p { font-size: 0.9rem; margin: 0; }
+
+/* --- Responsivo --- */
+@media (max-width: 992px) {
+    .hero { flex-direction: column-reverse; text-align: center; padding-top: 140px; gap: 50px; }
+    .hero-content { padding-right: 0; }
+    .botoes { justify-content: center; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .profile-pic { width: 280px; height: 280px; }
+    .nav-links { display: none; } /* Menu some no celular, mas o botão de tema ficaria oculto. */
+}
