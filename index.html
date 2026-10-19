@@ -1,127 +1,642 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Matheus Colossi</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Matheus Colossi | Tecnologia da Informação e Desenvolvimento</title>
+
+    <meta name="description"
+          content="Portfólio de Matheus Colossi. Profissional de Tecnologia da Informação, estudante de Ciência da Computação, com experiência em suporte técnico, desenvolvimento de software, sistemas e automação.">
+
+    <meta name="author" content="Matheus Colossi">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
             <div class="logo">Matheus</div>
+
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="https://github.com/matheuscolossi?tab=repositories" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a></li>
-                <li><a href="#contato" class="btn-contato">Contato</a></li>
-                <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
+
+                <li>
+                    <a href="https://github.com/matheuscolossi?tab=repositories"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contato" class="btn-contato">
+                        Contato
+                    </a>
+                </li>
+
+                <li>
+                    <button id="theme-toggle"
+                            class="theme-btn"
+                            type="button"
+                            aria-label="Alternar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
+
+        <!-- APRESENTAÇÃO PRINCIPAL -->
         <section class="hero">
+
             <div class="hero-content">
-                <span class="badge">Desenvolvedor em Formação</span>
-                <h1>Olá, eu sou <br> <span class="highlight">Matheus Colossi</span></h1>
-                <p>Estudante de Ciência da Computação (4º semestre), com interesse em Inteligência Artificial, Segurança da Informação e desenvolvimento de software. Possuo perfil analítico e orientado a resultados, com foco em aprendizado contínuo e aplicação prática de novas tecnologias. Experiência em prospecção de clientes e boa comunicação interpessoal, aliando conhecimento técnico a visão estratégica..</p>
-                
+
+                <span class="badge">
+                    Tecnologia da Informação | Desenvolvimento | Automação
+                </span>
+
+                <h1>
+                    Olá, eu sou <br>
+                    <span class="highlight">Matheus Colossi</span>
+                </h1>
+
+                <p>
+                    Sou estudante de Ciência da Computação na URI
+                    (6º período) e profissional de Tecnologia da
+                    Informação, com experiência em suporte técnico,
+                    sistemas corporativos e desenvolvimento de software.
+                    <br><br>
+                    Atualmente atuo na Comil Ônibus S.A., contribuindo
+                    para o suporte e a melhoria de processos de TI.
+                    Também desenvolvo projetos utilizando programação,
+                    bancos de dados e automação.
+                    <br><br>
+                    Tenho especial interesse em Inteligência Artificial
+                    e em criar soluções tecnológicas que resolvam
+                    problemas reais. Possuo certificação de inglês B2
+                    e busco evolução técnica e aprendizado contínuo.
+                </p>
+
                 <div class="botoes">
-                    <a href="https://www.linkedin.com/in/matheus-colossi-a13b7616b" target="_blank" class="btn-primary">
-                        <i class="fab fa-linkedin"></i> LinkedIn
+
+                    <a href="https://www.linkedin.com/in/matheus-colossi"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn-primary">
+
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
                     </a>
-                    <a href="https://github.com/matheuscolossi" target="_blank" class="btn-secondary">
-                        <i class="fab fa-github"></i> GitHub
+
+                    <a href="https://github.com/matheuscolossi"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn-secondary">
+
+                        <i class="fab fa-github"></i>
+                        GitHub
                     </a>
+
                 </div>
             </div>
-            
+
             <div class="hero-image">
-                <img src="perfil.jpg" alt="Foto de Matheus Colossi" class="profile-pic">
+                <img src="perfil.jpg"
+                     alt="Foto profissional de Matheus Colossi"
+                     class="profile-pic">
             </div>
+
         </section>
 
+
+        <!-- TECNOLOGIAS -->
         <section id="sobre" class="skills-section">
-            <h2>Minhas Tecnologias</h2>
+
+            <h2>Tecnologias e Competências</h2>
+
             <div class="skills-grid">
-                <div class="skill-card"><i class="fab fa-java"></i> Java</div>
-                <div class="skill-card"><i class="fas fa-code"></i> C#</div>
-                <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
-                <div class="skill-card"><i class="fab fa-python"></i> Python</div>
-                <div class="skill-card"><i class="fas fa-database"></i> SQL Server</div>
-                <div class="skill-card"><i class="fab fa-docker"></i> Docker</div>
+
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    Java
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    C#
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    JavaScript
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    HTML5
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    CSS3
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    SQL Server
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    MySQL
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    Git / GitHub
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-docker"></i>
+                    Docker
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-windows"></i>
+                    Windows
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-linux"></i>
+                    Linux / Ubuntu
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-headset"></i>
+                    Suporte Técnico
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-ticket-alt"></i>
+                    GLPI
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-users-cog"></i>
+                    Active Directory
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-chart-bar"></i>
+                    Power BI / Excel
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    IA Aplicada
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    Automação
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    Python (em estudo)
+                </div>
+
             </div>
+
         </section>
 
+
+        <!-- EXPERIÊNCIA PROFISSIONAL -->
         <section id="experiencia" class="timeline-section">
+
             <h2>Trajetória Profissional</h2>
+
             <div class="timeline">
+
+                <!-- COMIL -->
                 <div class="timeline-item">
+
+                    <h3>Comil Ônibus S.A.</h3>
+
+                    <span>
+                        Auxiliar de TI | Abr/2026 - Atualmente
+                    </span>
+
+                    <p>
+                        Atuação no suporte aos usuários e sistemas
+                        corporativos, com atendimento e gerenciamento
+                        de chamados por meio do GLPI.
+                        <br><br>
+                        Experiência em criação e gerenciamento de
+                        usuários, padronização de acessos, organização
+                        de informações e planilhas e participação
+                        em projetos voltados à melhoria de
+                        processos e sistemas internos.
+                    </p>
+
+                </div>
+
+
+                <!-- LDL SECURITY -->
+                <div class="timeline-item">
+
                     <h3>LDL Security</h3>
-                    <span>Out/2025 - Atual</span>
-                    <p>Assistente de Prospecção. Foco em qualificação de leads B2B, uso de CRM e estratégias de marketing digital.</p>
+
+                    <span>
+                        Assistente de Prospecção de Clientes |
+                        Nov/2025 - Jan/2026
+                    </span>
+
+                    <p>
+                        Atuação na prospecção e qualificação de
+                        clientes B2B e B2C, utilizando ferramentas
+                        de CRM, pesquisa de mercado e organização
+                        de informações.
+                        <br><br>
+                        Participação em atividades de marketing
+                        digital e automação de contatos,
+                        desenvolvendo habilidades de comunicação,
+                        análise e organização de processos.
+                    </p>
+
                 </div>
+
+
+                <!-- PREFEITURA -->
                 <div class="timeline-item">
-                    <h3>Prefeitura de Erechim</h3>
-                    <span>Fev/2024 - Set/2025</span>
-                    <p>Técnico em TI. Suporte a usuários, manutenção de hardware/software e colaboração com equipe de dev.</p>
+
+                    <h3>Prefeitura Municipal de Erechim</h3>
+
+                    <span>
+                        Técnico em TI | Fev/2024 - Out/2025
+                    </span>
+
+                    <p>
+                        Atendimento e suporte técnico aos usuários,
+                        diagnóstico e resolução de problemas
+                        relacionados a hardware, software e
+                        sistemas internos.
+                        <br><br>
+                        Instalação e configuração de equipamentos
+                        e programas, manutenção de computadores
+                        e colaboração com a equipe de desenvolvimento
+                        na identificação de falhas em sistemas.
+                    </p>
+
                 </div>
+
             </div>
         </section>
 
+
+        <!-- FORMAÇÃO ACADÊMICA -->
+        <section id="formacao" class="timeline-section">
+
+            <h2>Formação e Certificações</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <h3>Bacharelado em Ciência da Computação</h3>
+
+                    <span>
+                        URI Erechim | 6º período - Em andamento
+                    </span>
+
+                    <p>
+                        Universidade Regional Integrada do Alto
+                        Uruguai e das Missões.
+                        <br><br>
+                        Formação com estudos em programação,
+                        algoritmos, estruturas de dados,
+                        bancos de dados, arquitetura de computadores
+                        e desenvolvimento de sistemas.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>Inglês - Nível B2</h3>
+
+                    <span>
+                        Centro de Línguas URI | Certificação em 2025
+                    </span>
+
+                    <p>
+                        Certificação de inglês em nível B2,
+                        com 918 horas de formação pelo
+                        Centro de Línguas da URI.
+                        <br><br>
+                        Aperfeiçoamento contínuo do idioma.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>Engenharia de Prompts com IA</h3>
+
+                    <span>
+                        Udemy | Concluído em 2026
+                    </span>
+
+                    <p>
+                        Formação complementar em Engenharia de
+                        Prompts, com foco na utilização de
+                        ferramentas de Inteligência Artificial
+                        e aplicações práticas da tecnologia.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJETOS -->
         <section id="projetos" class="projects-section">
-            <h2>Projetos Recentes</h2>
+
+            <h2>Projetos em Destaque</h2>
+
             <div class="projects-grid">
+
+
+                <!-- ASSISTENTE IA -->
                 <div class="project-card">
+
+                    <h3>Assistente de TI com Inteligência Artificial</h3>
+
+                    <p>
+                        Protótipo em desenvolvimento para auxiliar
+                        o atendimento de chamados de TI.
+                        Voltado à orientação de usuários, consulta
+                        a procedimentos e automação de etapas
+                        do suporte de primeiro nível.
+                    </p>
+
+                    <div class="tags">
+                        <span>IA</span>
+                        <span>JavaScript</span>
+                        <span>Automação</span>
+                        <span>Em desenvolvimento</span>
+                    </div>
+
+                </div>
+
+
+                <!-- GEARTRACK -->
+                <div class="project-card">
+
                     <h3>GearTrack</h3>
-                    <p>Sistema desktop de gestão comercial com controle de vendas, compras e fornecedores.</p>
+
+                    <p>
+                        Sistema desktop de gestão comercial
+                        desenvolvido em C# com Windows Forms
+                        e SQL Server.
+                        <br><br>
+                        Inclui funcionalidades relacionadas
+                        ao controle de produtos, compras,
+                        vendas e fornecedores.
+                    </p>
+
                     <div class="tags">
                         <span>C#</span>
                         <span>SQL Server</span>
+                        <span>Windows Forms</span>
+                        <span>ADO.NET</span>
                     </div>
+
                 </div>
+
+
+                <!-- SIMULADOR CPU -->
                 <div class="project-card">
-                    <h3>Simulador de CPU</h3>
-                    <p>Ferramenta visual educativa sobre arquitetura de computadores (Java Swing).</p>
+
+                    <h3>MARIE CPU Simulator</h3>
+
+                    <p>
+                        Simulador educacional desenvolvido
+                        em Java Swing para demonstrar
+                        o funcionamento de uma CPU de 8 bits.
+                        <br><br>
+                        Apresenta registradores, memória
+                        e etapas do ciclo de execução
+                        de instruções.
+                    </p>
+
                     <div class="tags">
                         <span>Java</span>
                         <span>Swing</span>
+                        <span>Arquitetura de Computadores</span>
                     </div>
+
                 </div>
+
+
+                <!-- FANATICOS -->
+                <div class="project-card">
+
+                    <h3>Fanáticos FC - E-commerce</h3>
+
+                    <p>
+                        Aplicação web de comércio eletrônico
+                        para gerenciamento e venda de camisas
+                        de futebol.
+                        <br><br>
+                        Conta com painel administrativo,
+                        pesquisa de produtos, filtros,
+                        carrinho de compras e integração
+                        de checkout via WhatsApp.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <p>
+                        <a href="https://github.com/matheuscolossi/fanaticos-fc"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            Ver repositório
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <!-- DASHBOARD FINANCEIRO -->
+                <div class="project-card">
+
+                    <h3>Dashboard Financeiro</h3>
+
+                    <p>
+                        Aplicação para gerenciamento de
+                        finanças pessoais com acompanhamento
+                        de receitas e despesas,
+                        gráficos interativos e filtros
+                        por categorias e períodos.
+                    </p>
+
+                    <div class="tags">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS3</span>
+                    </div>
+
+                    <p>
+                        <a href="https://github.com/matheuscolossi/dashboard-financeira"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            Ver repositório
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <!-- INVESTFACIL -->
+                <div class="project-card">
+
+                    <h3>InvestFácil</h3>
+
+                    <p>
+                        Plataforma web para organização
+                        e acompanhamento de investimentos.
+                        <br><br>
+                        Possui dashboard de patrimônio,
+                        acompanhamento de ativos,
+                        simulação de juros compostos,
+                        calendário de dividendos
+                        e recursos de análise de risco.
+                    </p>
+
+                    <div class="tags">
+                        <span>TypeScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Finanças</span>
+                    </div>
+
+                    <p>
+                        <a href="https://github.com/matheuscolossi/InvestFacil"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            Ver repositório
+                        </a>
+                    </p>
+
+                </div>
+
             </div>
 
+
+            <!-- ACESSO AO GITHUB -->
             <div class="github-more">
-                <a href="https://github.com/matheuscolossi?tab=repositories" target="_blank" class="btn-github-large">
-                    <i class="fab fa-github"></i> Ver todos os meus repositórios no GitHub
+
+                <a href="https://github.com/matheuscolossi?tab=repositories"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn-github-large">
+
+                    <i class="fab fa-github"></i>
+                    Ver todos os meus projetos no GitHub
+
                 </a>
+
             </div>
+
         </section>
+
     </main>
 
+
+    <!-- CONTATO -->
     <footer id="contato">
+
         <div class="footer-content">
+
             <h2>Vamos Conversar?</h2>
-            <p>Estou disponível para novos projetos e oportunidades de desenvolvimento.</p>
-            
+
+            <p>
+                Estou aberto a novas oportunidades,
+                projetos e conexões profissionais nas
+                áreas de Tecnologia da Informação,
+                Desenvolvimento de Software e Automação.
+                <br><br>
+                Tem uma oportunidade ou ideia de projeto?
+                Entre em contato!
+            </p>
+
+
             <div class="contact-links">
-                <a href="https://wa.me/5554991138217?text=Olá%20Matheus,%20vi%20seu%20portfólio!" target="_blank" class="btn-wpp">
-                    <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+
+                <a href="https://wa.me/5554991138217?text=Ola%20Matheus%2C%20vi%20seu%20portfolio!"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn-wpp">
+
+                    <i class="fab fa-whatsapp"></i>
+                    Chamar no WhatsApp
+
                 </a>
-                <a href="mailto:mlc170606@gmail.com" class="btn-email">
-                    <i class="fas fa-envelope"></i> mlc170606@gmail.com
+
+
+                <a href="mailto:mlc170606@gmail.com"
+                   class="btn-email">
+
+                    <i class="fas fa-envelope"></i>
+                    Enviar E-mail
+
                 </a>
+
             </div>
+
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Matheus Colossi | Erechim, RS</p>
+
+                <p>
+                    &copy; 2026 Matheus Colossi |
+                    Erechim, RS - Brasil
+                </p>
+
             </div>
+
         </div>
+
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
 </html>
